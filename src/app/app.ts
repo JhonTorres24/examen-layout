@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { Header } from './componentes/header/header';
+import { Main } from './componentes/main/main';
+import { Aside } from './componentes/aside/aside';
+import { Footer } from './componentes/footer/footer';
+
+@Component({
+  selector: 'app-root',
+  imports: [Header, Main, Aside, Footer],
+  templateUrl: './app.html',
+  styleUrl: './app.css',
+})
+export class App {
+  title = 'examen-layout';
+}
